@@ -1,0 +1,36 @@
+{
+    "js": [
+        "js/main.js",
+	    "js/OpenLayers.Format.OSM.js",
+	    "js/OpenLayers.Format.OSMGeometry.js"
+    ],
+    "default_options": {
+        "GeocodedAddressFields": [
+			{"name": "display", "mapping": "tag[k=name]@v"},
+			{"name": "minlat", "mapping": "bounds@minlat"},
+			{"name": "minlon", "mapping": "bounds@minlon"},
+			{"name": "maxlat", "mapping": "bounds@maxlat"},
+			{"name": "maxlon", "mapping": "bounds@maxlon"}
+		],
+		"comboTemplate": "{display}",
+        "limit": 50
+    },
+    "i18n": {
+        "en": {
+            "overpass.window_title": "Overpass API search (OSM)",
+            "overpass.field_emptytext": "Search terms"
+        },
+        "es": {
+            "overpass.window_title": "Buscar a través Overpass API (OSM)",
+            "overpass.field_emptytext": "Términos de búsqueda"
+        },
+        "fr": {
+            "overpass.window_title": "Recherche via Overpass (OSM)",
+            "overpass.field_emptytext": "Termes de recherche"
+        },
+        "de": {
+            "overpass.window_title": "Suche über Overpass (OSM)",
+            "overpass.field_emptytext": "Suchbegriffe"
+        }
+    }
+}
